@@ -22,6 +22,9 @@ workflows:
       - name: Build APK
         script: |
           flutter build apk --release
+      - name: Build Flutter Web
+        script: |
+          flutter build web --release
       - name: Build iOS
         script: |
           flutter build ios --release
