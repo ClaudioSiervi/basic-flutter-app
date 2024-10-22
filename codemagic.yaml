@@ -27,7 +27,9 @@ workflows:
       email:
         recipients:
           - claudio.junior@bairesdev.com
-    trigger:
-      branches:
-        only:
-          - main
+trigger:
+  events:
+    - push
+  branch_patterns:
+    - pattern: main
+      include: true
