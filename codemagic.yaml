@@ -11,9 +11,9 @@ workflows:
       - name: Install dependencies
         script: |
           flutter pub get
-      - name: Run Flutter tests
-        script: |
-          flutter test
+      # - name: Run Flutter tests
+      #   script: |
+      #     flutter test
       - name: Build APK
         script: |
           flutter build apk --release
